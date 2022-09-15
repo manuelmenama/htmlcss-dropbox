@@ -1,5 +1,42 @@
+/* GENERAL */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+.debug{
+  background-color: rgba(138, 43, 226, 0.25);
+  border: 1px solid black;
+}
+
+.container{
+  width: 60%;
+  margin: 0 auto;
+
+  /* debug */
+  border: 1px dashed blue;
+}
+
+/* HEADER */
+header{
+  background-color: white;
+  height: 80px;
+  border-bottom: 2px solid #dfdfdf;
+  display: flex;
+  align-items: center;
+}
+
+.top-nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+
+
+
+/* MAIN */
+
+/* FOOTER */
