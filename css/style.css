@@ -22,6 +22,13 @@ body{
   border: 1px dashed blue;
 }
 
+.container-big{
+  width: 70%;
+  margin: 0 auto;
+  /* debug */
+  border: 1px dashed rgb(255, 0, 0);
+}
+
 .button{
   background-color: #0061ff;
   padding: 6px 15px;
@@ -97,4 +104,71 @@ main{
 footer{
   background-color: black;
   color: white;
+  padding: 100px 0;
+}
+
+.f-column{
+  display: inline-block;
+  width: calc(97% / 5);
+}
+
+.f-column h4{
+  margin-bottom: 10px;
+}
+
+.f-column ul{
+  list-style: none;
+}
+
+.f-column ul li{
+  margin-bottom: 10px;
+}
+
+.f-column ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 12px
+}
+
+.f-column ul li a:hover{
+  text-decoration: underline;
+}
+
+.f-bottom .dropmenu{
+  background-color: #353535;
+  width: 100%;
+  display: none;
+  position: absolute;
+  z-index: 999;
+}
+.f-bottom .dropmenu ul{
+  list-style: none;
+}
+
+.f-bottom .dropmenu ul a{
+  color: gray;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.f-bottom .dropmenu ul a:hover{
+  text-decoration: underline;
+}
+
+.f-bottom .dropbtn{
+  position: relative;
+  display: inline-block;
+  font-size: 12px;
+  padding: 40px 10px 0 0;
+  cursor: pointer;
+  border-top: 1px solid darkgray;
+  color: gray;
+}
+
+.f-bottom .dropbtn:hover{
+  background-color: #353535;
+}
+
+.f-bottom .dropbtn:hover .dropmenu{
+  display: block;
 }
