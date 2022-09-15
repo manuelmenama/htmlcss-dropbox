@@ -6,7 +6,7 @@
 }
 
 body{
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .debug{
@@ -34,10 +34,15 @@ body{
   padding: 6px 15px;
   color: white;
   cursor: pointer;
+  font-size: 12px;
 }
 
 .button:hover{
   background-color: #4d91ff;
+}
+
+img{
+  max-width: 100%;
 }
 
 /* HEADER */
@@ -52,6 +57,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 12px;
 }
 
 .top-nav{
@@ -70,7 +76,6 @@ header{
 .top-nav.nav-right .button a{
   text-decoration: none;
   color: white;
-  font-size: 14px;
 }
 
 .top-nav ul li a{
@@ -97,6 +102,52 @@ header{
 /* MAIN */
 main{
   height: 800px;
+  padding: 80px 0;
+}
+
+.hero{
+  background-color: #b4d0e7;
+  padding-top: 40px;
+}
+
+.hero h1{
+  font-size: 50px;
+  font-weight: 900;
+  padding-bottom: 40px;
+}
+
+.hero .hero-content{
+  display: flex;
+  position: relative;
+}
+
+.hero-content p{
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.hero-content .text .go-to{
+  margin-bottom: 20px;
+}
+
+.hero-content a.button{
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+.hero img{
+  width: 70%;
+  position: absolute;
+}
+
+.hero .container-big .text{
+  width: 30%;
+  display: inline-block;
+}
+
+.hero .container-big .image{
+  width: 70%;
+  display: inline-block;
 }
 
 /* FOOTER */
