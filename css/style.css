@@ -236,7 +236,25 @@ section.container .row .card{
 /* H2 E LINK */
 
 /* SEZIONE CON BOX QUADRATI */
+.client-review .square{
+  width: calc(100vw / 3);
+  height: calc(100vw / 3);
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.client-review .square .company{
+  width: calc(100% / 2);
+  height: calc(100% / 2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-review .square .company .logo-c svg{
+  width: 120px;
+  fill: white;
+}
 /* H2 E BOTTONE */
 
 /* FAQ CON MENU' A TENDINA */
