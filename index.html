@@ -7,14 +7,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
 </head>
 <body>
 
+  <!-- HEADER -->
   <header>
-
+    <!-- NAVIGAZIONE SINISTRA -->
     <nav class="top-nav nav-left">
       <div class="logo">
         <a href="#">
@@ -34,6 +35,7 @@
       </ul>
     </nav>
 
+    <!-- NAVIGAZIONE DESTRA -->
     <nav class="top-nav nav-right">
       <ul class="">
         <li class="">
@@ -52,6 +54,7 @@
     </nav>
   </header>
 
+  <!-- MAIN -->
   <main>
     <div class="hero">
       <h1 class="container-big">
@@ -76,15 +79,55 @@
       </div>
     </div>
 
+    <!-- SECTION WHITH FOUR BOXES -->
     <section class="tarif container">
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box-bottom"></div>
+
+      <div class="radio">
+        <span>
+          <span class="rd-button active"></span>
+          <span>Fatturazione mensile</span>
+        </span>
+        <span>
+          <span class="rd-button"></span>
+          <span>Fatturazione annuale</span>
+        </span>
+      </div>
+
+      <div class="row">
+        <div class="box">B</div>
+        <div class="box">B</div>
+        <div class="box">B</div>
+      </div>
+      <div class="box-bottom">B</div>
     </section>
+
+    <!-- SECTION CTA PATNER -->
+    <section class="container cta">
+      <div class="image-cta">
+        <img src="img/partner.png" alt="">
+      </div>
+      <div class="text-cta">
+        <h3>Entra in contatto con un patner Dropbox</h3>
+        <p>Trova un partner Dropbox o HelloSign di fiducia ottieni soluzioni e i servizi necessari per raggiungere i tuoi obbiettivi aziendali, tra cui implementazione, integrazione, gestione e supporto continui.</p>
+        <div class="button">Trova un partner</div>
+      </div>
+    </section>
+
+    <!-- SECTION CON DUE ROW CON IMG E TEXT E H2 -->
+    <section class="container"></section>
+    <!-- H2 E LINK -->
+
+    <!-- SEZIONE CON BOX QUADRATI -->
+
+    <!-- H2 E BOTTONE -->
+
+    <!-- FAQ CON MENU' A TENDINA-->
   </main>
 
+  <!-- FOOTER -->
   <footer>
+
+    <!-- NAVIGAZIONE IN ALTO CON COLONNE -->
     <nav class="container-big f-top">
       <div class="f-column">
         <h4>Dropbox</h4>
@@ -186,13 +229,11 @@
           </li>
         </ul>
       </div>
-      
     </nav>
+
+    <!-- NAVIGAZIONE IN BASSO CON SELEZIONE LINGUA -->
     <nav class="container-big f-bottom">
       <div class="dropbtn">
-        <i class="fa-solid fa-earth-europe"></i>
-        &thinsp;Italiano&thinsp;
-        <i class="fa-solid fa-chevron-down"></i>
         <div class="dropmenu">
           <ul>
             <li>
@@ -209,6 +250,9 @@
             </li>
           </ul>
         </div>
+        <i class="fa-solid fa-earth-europe"></i>
+        &thinsp;Italiano&thinsp;
+        <i class="fa-solid fa-chevron-up"></i>
       </div>
     </nav>
   </footer>
