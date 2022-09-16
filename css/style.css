@@ -59,6 +59,16 @@ img{
   padding: 5px;
 }
 
+.icon-a::after{
+  font-family: "Font Awesome 6 Free";
+  content: '\0020';
+}
+
+.icon-b::before{
+  font-family: "Font Awesome 6 Free";
+  content: '\0020';
+}
+
 /* HEADER */
 header{
   position: fixed;
@@ -234,8 +244,15 @@ section.container .row .card{
 
 
 /* H2 E LINK */
+section.cta2{
+  margin-bottom: 40px;
+}
 
 /* SEZIONE CON BOX QUADRATI */
+.client-review{
+  display: flex;
+}
+
 .client-review .square{
   width: calc(100vw / 3);
   height: calc(100vw / 3);
@@ -256,8 +273,17 @@ section.container .row .card{
   fill: white;
 }
 /* H2 E BOTTONE */
+.coloured-sec{
+  background-color: #b4d0e7;
+  padding: 40px 0;
+  margin-bottom: 40px;
+}
 
 /* FAQ CON MENU' A TENDINA */
+.faq .container .question-box .icon-a::after{
+  content: "\f078";
+}
+
 
 /* FOOTER */
 footer{
@@ -266,6 +292,7 @@ footer{
   padding: 100px 0;
   margin-top: 50px;
 }
+
 
 /* NAVIGAZIONE IN ALTO CON COLONNE */
 .f-column{
