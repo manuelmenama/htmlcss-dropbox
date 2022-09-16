@@ -59,15 +59,9 @@ img{
   padding: 5px;
 }
 
-.icon-a::after{
+/* .fa-lib{
   font-family: "Font Awesome 6 Free";
-  content: '\0020';
-}
-
-.icon-b::before{
-  font-family: "Font Awesome 6 Free";
-  content: '\0020';
-}
+} */
 
 /* HEADER */
 header{
@@ -182,6 +176,7 @@ main{
 }
 
 /* SECTION WHIT FOUR BOXES AND RADIO */
+/* RADIO BUTTON */
 .radio{
   margin-bottom: 30px;
 }
@@ -195,7 +190,8 @@ main{
   vertical-align: middle;
 }
 
-
+/* BOXES */
+/* BOXES GENERAL */
 section.tarif{
   margin-top: 160px;
 }
@@ -213,6 +209,42 @@ section.tarif .row .box{
 section.tarif .box-bottom{
   border: 1px solid #d0d0d3;
 }
+
+/* BOXES CONTAIN */
+.tarif .row .box .box-contain{
+  padding: 30px 25px;
+}
+
+.tarif .row .box .icon{
+  border-bottom: 1px solid #d0d0d3;
+}
+
+.box .icon::before{
+  font-family: "Font Awesome 6 Free";
+  content: '\f007';
+}
+
+.box .icon{
+  text-align: center;
+  padding: 5px 0;
+}
+
+.box h4,
+.box-bottom h4{
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.box .box-contain p:nth-child(2){
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.box .box-contain p:nth-child(3){
+  color: #d0d0d3;
+  margin-bottom: 30px;
+}
+
 
 /* SECTION CTA PATNER */
 .cta{
