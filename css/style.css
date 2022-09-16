@@ -207,6 +207,7 @@ section.tarif .box-bottom{
 /* SECTION CTA PATNER */
 .cta{
   display: flex;
+  margin-bottom: 40px;
 }
 
 .cta .image-cta{
@@ -219,6 +220,18 @@ section.tarif .box-bottom{
 }
 
 /* SECTION CON DUE ROW CON IMG E TEXT E H2 */
+section.spot-card{
+  margin-bottom: 40px;
+}
+
+section.container .row{
+  display: flex;
+}
+
+section.container .row .card{
+  width: calc(100% / 3);
+}
+
 
 /* H2 E LINK */
 
