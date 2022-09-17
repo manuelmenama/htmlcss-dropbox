@@ -36,6 +36,7 @@ body{
   cursor: pointer;
   font-size: 12px;
   display: inline-block;
+  text-decoration: none;
 }
 
 .button:hover{
@@ -59,9 +60,11 @@ img{
   padding: 5px;
 }
 
-/* .fa-lib{
+.fa-lib{
   font-family: "Font Awesome 6 Free";
-} */
+}
+
+
 
 /* HEADER */
 header{
@@ -90,11 +93,6 @@ header{
   display: flex;
   align-items: center;
   list-style: none;
-}
-
-.top-nav.nav-right .button a{
-  text-decoration: none;
-  color: white;
 }
 
 .top-nav ul li a{
@@ -127,7 +125,7 @@ main{
 .hero{
   background-color: #b4d0e7;
   padding-top: 40px;
-  max-height: 730px;
+  height: 730px;
 }
 
 .hero h1{
@@ -136,25 +134,60 @@ main{
   padding-right: 100px;
 }
 
+.hero .hero-content .text{
+  width: 20%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero .hero-content .text p:nth-child(1){
+  height: 40%;
+  padding-bottom: 20px;
+  display: inline-block;
+}
+
+.hero .hero-content .text .btn{
+  height: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.hero .hero-content .text p:nth-child(2){
+  height: 20%;
+  display: inline-block;
+}
+
+.hero .hero-content .text .go-to{
+  height: 20%;
+  display: flex;
+  align-items: center;
+}
+
 .hero .hero-content{
+  height: 80%;
   display: flex;
   justify-content: space-between;
   position: relative;
-  max-height: 100%;
 }
 
-.hero-content p{
+/* .hero-content p{
   margin-bottom: 50px;
   font-size: 16px;
-}
+} */
 
-.hero-content .text .go-to{
+/* .hero-content .text .go-to{
   margin-bottom: 20px;
-}
+} */
 
 .hero-content a.button{
   display: inline-block;
-  margin-bottom: 25px;
+  /* margin-bottom: 25px; */
+}
+
+.hero-content .image{
+  width: 80%;
 }
 
 .hero img{
@@ -211,22 +244,32 @@ section.tarif .box-bottom{
 }
 
 /* BOXES CONTAIN */
+.tarif .box,
+.tarif .box-bottom{
+  font-size: 10px;
+}
+
 .tarif .row .box .box-contain{
   padding: 30px 25px;
 }
 
 .tarif .row .box .icon{
   border-bottom: 1px solid #d0d0d3;
+  text-align: center;
+  padding: 5px 0;
 }
 
-.box .icon::before{
-  font-family: "Font Awesome 6 Free";
+.box:nth-child(1) .icon .ico::before{
   content: '\f007';
 }
 
-.box .icon{
-  text-align: center;
-  padding: 5px 0;
+.box-bottom .icon .ico::before,
+.box:nth-child(2) .icon .ico::before{
+  content: '\f0c0';
+}
+
+.box:nth-child(3) .icon .ico::before{
+  content: '\f1ad';
 }
 
 .box h4,
@@ -243,6 +286,79 @@ section.tarif .box-bottom{
 .box .box-contain p:nth-child(3){
   color: #d0d0d3;
   margin-bottom: 30px;
+}
+
+.box .box-contain ul{
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.box .box-contain ul li{
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.box .box-contain ul li .ico{
+  padding-top: 2px;
+  margin-right: 2px;
+}
+
+.box .box-contain ul.top li:nth-child(1) .ico::before{
+  content: "\f007";
+}
+
+.box .box-contain ul.top li:nth-child(2) .ico::before{
+  content: "\f07b";
+}
+
+.box .box-contain ul.top li:nth-child(3) .ico::before{
+  content: "\f7a2";
+}
+
+.box .box-contain ul.bottom li .ico::before{
+  content: '\f00c';
+  color: #0061ff;
+}
+
+.box .box-contain .button{
+  margin-bottom: 20px;
+}
+
+.box .box-contain > p{
+  margin-bottom: 20px;
+}
+
+.box .box-contain .small-lane{
+  width: calc(100% / 3);
+  border-bottom: 1px solid #d0d0d3;
+  margin-bottom: 30px;
+}
+
+.box .box-contain h5{
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+.box-bottom .row{
+  display: flex;
+}
+
+.box-bottom .icon{
+  border-bottom: 1px solid #d0d0d3;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.box-bottom .text{
+  width: 80%;
+}
+
+.box-bottom .btn-cont{
+  width: 20%;
+}
+
+.box-bottom .row{
+  padding: 30px 25px;
 }
 
 
