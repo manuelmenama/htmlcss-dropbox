@@ -312,10 +312,22 @@ section.cta2{
 }
 
 /* FAQ CON MENU' A TENDINA */
-.faq .container .question-box .icon-a::after{
-  content: "\f078";
+.faq .question-box .card .icon::after{
+  font-family: "Font Awesome 6 Free";
+  content: '\f078';
 }
 
+.question-box .card{
+  display: flex;
+}
+
+.question-box .card .text{
+  width: 70%;
+}
+
+.question-box .card .icon{
+  width: 30%;
+}
 
 /* FOOTER */
 footer{
