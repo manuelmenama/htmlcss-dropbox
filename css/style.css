@@ -436,6 +436,16 @@ section.cta2{
   margin-bottom: 40px;
 }
 
+section.cta2 h2{
+  font-size: 30px;
+  width: 70%;
+  margin-bottom: 60px;
+}
+
+section.cta2 a{
+  font-size: 12px;
+}
+
 /* SEZIONE CON BOX QUADRATI */
 .client-review{
   display: flex;
