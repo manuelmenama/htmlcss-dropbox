@@ -350,22 +350,30 @@ section.tarif .box-bottom{
 }
 
 .box-bottom .text{
-  width: 80%;
+  width: 70%;
 }
 
 .box-bottom .btn-cont{
-  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 30%;
 }
 
 .box-bottom .row{
-  padding: 30px 25px;
+  padding: 30px 25px 5px 25px;
 }
 
+.box-bottom .row .text h5{
+  font-size: 12px;
+  margin-bottom: 40px;
+}
 
 /* SECTION CTA PATNER */
 .cta{
   display: flex;
   margin-bottom: 40px;
+  font-size: 14px;
 }
 
 .cta .image-cta{
@@ -374,22 +382,54 @@ section.tarif .box-bottom{
 
 .cta .text-cta{
   width: 40%;
-  padding: 60px 50px;
+  padding: 60px 40px;
 }
 
+.cta .text-cta h3{
+  margin-bottom: 20px;
+}
+
+.cta .text-cta p{
+  margin-bottom: 20px;
+}
+
+.cta .text-cta a.button{
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+
+.cta .text-cta a.button:hover{
+  border: 1px solid gray;
+  color: gray;
+}
 /* SECTION CON DUE ROW CON IMG E TEXT E H2 */
 section.spot-card{
   margin-bottom: 40px;
 }
 
-section.container .row{
-  display: flex;
+section.spot-card h2{
+  font-size: 30px;
+  margin-bottom: 40px;
 }
 
-section.container .row .card{
+section.spot-card .row{
+  display: flex;
+  gap: 20px;
+}
+
+section.spot-card .row .card{
   width: calc(100% / 3);
 }
 
+section.spot-card .row .card p,
+section.spot-card .row .card h3{
+  margin-bottom: 20px;
+}
+
+section.spot-card .row .card p{
+  font-size: 12px;
+}
 
 /* H2 E LINK */
 section.cta2{
