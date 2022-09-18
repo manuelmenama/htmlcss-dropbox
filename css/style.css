@@ -31,7 +31,7 @@ body{
 
 .button{
   background-color: #0061ff;
-  padding: 6px 15px;
+  padding: 8px 15px;
   color: white;
   cursor: pointer;
   font-size: 12px;
@@ -304,6 +304,11 @@ section.tarif .box-bottom{
   margin-right: 2px;
 }
 
+.box .box-contain a{
+  width: 100%;
+  text-align: center;
+}
+
 .box .box-contain ul.top li:nth-child(1) .ico::before{
   content: "\f007";
 }
@@ -339,8 +344,11 @@ section.tarif .box-bottom{
   margin-bottom: 15px;
   font-size: 12px;
 }
+
+/* BOX ORIZZONTALE */
 .box-bottom .row{
   display: flex;
+  padding: 30px 25px 5px 25px;
 }
 
 .box-bottom .icon{
@@ -350,18 +358,19 @@ section.tarif .box-bottom{
 }
 
 .box-bottom .text{
-  width: 70%;
+  width: 74.5%;
 }
 
 .box-bottom .btn-cont{
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  width: 30%;
+  width: 25.5%;
 }
 
-.box-bottom .row{
-  padding: 30px 25px 5px 25px;
+.box-bottom .btn-cont .button{
+  width: 100%;
+  text-align: center;
 }
 
 .box-bottom .row .text h5{
@@ -438,7 +447,7 @@ section.cta2{
 
 section.cta2 h2{
   font-size: 30px;
-  width: 70%;
+  width: 60%;
   margin-bottom: 60px;
 }
 
