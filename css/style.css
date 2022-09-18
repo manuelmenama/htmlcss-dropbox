@@ -17,16 +17,11 @@ body{
 .container{
   width: 60%;
   margin: 0 auto;
-
-  /* debug */
-  border: 1px dashed blue;
 }
 
 .container-big{
   width: 70%;
   margin: 0 auto;
-  /* debug */
-  border: 1px dashed rgb(255, 0, 0);
 }
 
 .button{
@@ -467,6 +462,19 @@ section.cta2 a{
   flex-wrap: wrap;
 }
 
+.client-review .square:nth-child(2){
+  display: block;
+}
+
+.client-review .square.designit:nth-child(2){
+  padding: 40px;
+  overflow: auto;
+  font-size: 14px;
+  background-color: #F5F5F5;
+}
+
+
+
 .client-review .square .company{
   width: calc(100% / 2);
   height: calc(100% / 2);
@@ -475,35 +483,148 @@ section.cta2 a{
   align-items: center;
 }
 
-.client-review .square .company .logo-c svg{
-  width: 120px;
-  fill: white;
-}
-/* H2 E BOTTONE */
-.coloured-sec{
-  background-color: #b4d0e7;
-  padding: 40px 0;
+.client-review .square:nth-child(2) img{
+  width: 60%;
   margin-bottom: 40px;
 }
 
-/* FAQ CON MENU' A TENDINA */
-.faq .question-box .card .icon::after{
-  font-family: "Font Awesome 6 Free";
-  content: '\f078';
+.client-review .square:nth-child(2) .lane{
+  width: 40%;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 40px;
 }
 
-.question-box .card{
+.client-review .square:nth-child(2) p{
+  margin-bottom: 40px;
+}
+
+.client-review .square .company .logo-c{
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.question-box .card .text{
-  width: 70%;
+.client-review .square:nth-child(1) .company:nth-child(1){
+  background-color: #A2D39B;
 }
 
-.question-box .card .icon{
+.client-review .square:nth-child(1) .company.active:nth-child(1){
+  border: 15px solid rgba(255, 255, 355, 0.35);
+}
+
+.client-review .square:nth-child(1) .company:nth-child(1){
+  background-color: #A2D39B;
+}
+
+.client-review .square:nth-child(1) .company:nth-child(2){
+  background-color: #61082B;
+}
+
+.client-review .square:nth-child(1) .company:nth-child(3){
+  background-color: #0093CE;
+}
+
+.client-review .square:nth-child(1) .company:nth-child(4){
+  background-color: #FF1C1C;
+}
+
+.client-review .square:nth-child(3) .company:nth-child(1){
+  background-color: #D5001F;
+}
+
+.client-review .square:nth-child(3) .company:nth-child(2){
+  background-color: #B4D0E7;
+}
+
+.client-review .square:nth-child(3) .company:nth-child(3){
+  background-color: #0D2481;
+}
+
+.client-review .square:nth-child(3) .company:nth-child(4){
+  background-color: #FFD830;
+}
+
+
+.client-review .square .company .logo-c svg{
+  width: 50%;
+  fill: white;
+
+}
+
+.client-review .square .company .logo-c img{
+  filter: invert(100%);
+  width: 50%;
+}
+
+
+/* H2 E BOTTONE */
+.coloured-sec{
+  background-color: #b4d0e7;
+  padding: 80px 0;
+  margin-bottom: 40px;
+}
+
+.coloured-sec h2{
+  color: #61082B;
+  width: 50%;
+  font-size: 35px;
+}
+
+.coloured-sec .tit-btn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.coloured-sec .tit-btn a{
   width: 30%;
+  text-align: center;
+  color: black;
+  background-color: white;
 }
 
+.coloured-sec .tit-btn a:hover{
+  color: gray;
+}
+
+/* FAQ CON MENU' A TENDINA */
+.faq h2{
+  font-size: 35px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.faq .lane-faq{
+  border-top: 1px solid black;
+}
+
+.question-box .hiding-box{
+  display: none;
+}
+
+/* .question-box:hover .hiding-box{
+  display: block;
+} */
+
+.faq .question-box:hover .ico::after{
+  content: '\f0d7';
+}
+
+.question-box .text h5{
+  width: 100%;
+  display: block;
+  position: relative;
+  padding: 40px 0;
+}
+
+.faq .question-box .text h5 .ico{
+  position: absolute;
+  right: 20px;
+}
+
+.faq .question-box .text h5 .ico::after{
+  content: '\f0d7';
+}
 /* FOOTER */
 footer{
   background-color: black;
@@ -543,14 +664,22 @@ footer{
 
 /* NAVIGAZIONE IN BASSO CON SELEZIONE LINGUA */
 .f-bottom .dropmenu{
-  background-color: #353535;
+  background-color: black;
   width: 100%;
   display: none;
   position: absolute;
-  top: 0;
-  left: 0;
   z-index: 999;
+  top: 100%;
 }
+
+.f-bottom .dropbtn .lang .ico:first-child::after{
+  content: '\f7a2';
+}
+
+.f-bottom .dropbtn .lang .ico:last-child::after{
+  content: "\f078";
+}
+
 .f-bottom .dropmenu ul{
   list-style: none;
 }
@@ -575,10 +704,10 @@ footer{
   color: gray;
 }
 
-.f-bottom .dropbtn:hover{
-  background-color: #353535;
-}
-
 .f-bottom .dropbtn:hover .dropmenu{
   display: block;
+}
+
+.f-bottom .dropbtn:hover .ico:last-child::after{
+  content: '\f077';
 }
