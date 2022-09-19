@@ -602,29 +602,29 @@ section.cta2 a{
   display: none;
 }
 
-/* .question-box:hover .hiding-box{
+.question-box:hover .hiding-box{
   display: block;
-} */
+}
 
-.faq .question-box:hover .ico::after{
-  content: '\f0d7';
+.faq .question-box:hover .text h5 .ico::after{
+  content: '\f077';
 }
 
 .question-box .text h5{
   width: 100%;
-  display: block;
-  position: relative;
+  display: flex;
   padding: 40px 0;
+  justify-content: space-between;
 }
 
 .faq .question-box .text h5 .ico{
-  position: absolute;
-  right: 20px;
+  padding-right: 20px;
 }
 
 .faq .question-box .text h5 .ico::after{
-  content: '\f0d7';
+  content: '\f078';
 }
+
 /* FOOTER */
 footer{
   background-color: black;
