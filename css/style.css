@@ -22,6 +22,9 @@ body{
 .container-big{
   width: 70%;
   margin: 0 auto;
+
+  /* debug */
+  border: 1px dashed red;
 }
 
 .button{
@@ -117,90 +120,43 @@ main{
 }
 
 /* HERO */
-.hero{
+main .hero{
   background-color: #b4d0e7;
-  padding-top: 40px;
-  height: 730px;
 }
 
-.hero h1{
-  font-size: 70px;
-  font-weight: 900;
-  padding-right: 100px;
+main .hero h1{
+  font-size: 50px;
+  margin-bottom: 40px;
+  padding-right: 70px;
+}
+
+.hero .hero-content .text p{
+  font-size: 12px;
+  margin-bottom: 40px;
+}
+
+.hero .hero-content .text .btn{
+  margin-bottom: 40px;
+}
+
+.hero .hero-content .text .go-to{
+  padding: 40px 0;
+}
+
+.hero .hero-content{
+  position: relative;
 }
 
 .hero .hero-content .text{
   width: 20%;
-  height: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
-.hero .hero-content .text p:nth-child(1){
-  height: 40%;
-  padding-bottom: 20px;
-  display: inline-block;
-}
-
-.hero .hero-content .text .btn{
-  height: 20%;
-  display: flex;
-  align-items: center;
-}
-
-.hero .hero-content .text p:nth-child(2){
-  height: 20%;
-  display: inline-block;
-}
-
-.hero .hero-content .text .go-to{
-  height: 20%;
-  display: flex;
-  align-items: center;
-}
-
-.hero .hero-content{
-  height: 80%;
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-}
-
-/* .hero-content p{
-  margin-bottom: 50px;
-  font-size: 16px;
-} */
-
-/* .hero-content .text .go-to{
-  margin-bottom: 20px;
-} */
-
-.hero-content a.button{
-  display: inline-block;
-  /* margin-bottom: 25px; */
-}
-
-.hero-content .image{
-  width: 80%;
-}
-
-.hero img{
-  width: 100%;
-  min-width: 800px;
-}
-
-.hero .container-big .text{
-  width: 40%;
-  min-width: 250px;
-  display: inline-block;
-}
-
-.hero .container-big .image{
-  min-width: 60%;
-  display: inline-block;
+.hero .hero-content .image{
+  width: 70%;
+  position: absolute;
   right: 0;
-  
+  top: 0;
+  min-width: 750px;
 }
 
 /* SECTION WHIT FOUR BOXES AND RADIO */
@@ -504,12 +460,12 @@ section.cta2 a{
   align-items: center;
 }
 
-.client-review .square:nth-child(1) .company:nth-child(1){
-  background-color: #A2D39B;
+.client-review .square .company.active{
+  border: 15px solid rgba(255, 255, 355, 0.35);
 }
 
-.client-review .square:nth-child(1) .company.active:nth-child(1){
-  border: 15px solid rgba(255, 255, 355, 0.35);
+.client-review .square:nth-child(1) .company:nth-child(1){
+  background-color: #A2D39B;
 }
 
 .client-review .square:nth-child(1) .company:nth-child(1){
