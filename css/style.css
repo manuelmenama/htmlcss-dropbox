@@ -126,12 +126,45 @@ main .hero{
 
 main .hero h1{
   font-size: 50px;
-  margin-bottom: 40px;
   padding-right: 70px;
+  width: 70%;
+}
+
+.hero .hero-content{
+  display: flex;
+}
+
+.hero .hero-content .text{
+  width: 30%;
+  display: inline-block;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start ;
+  max-height: 300px;
+}
+
+.hero .hero-content .image{
+  display: inline-block;
+  width: 70%;
+  position: relative;
+  right: 0;
+  top: 100px;
+  min-width: 650px;
 }
 
 .hero .hero-content .text p{
   font-size: 12px;
+}
+
+.hero .hero-content .text .bigt{
+  font-size: 12px;
+  margin-bottom: 40px;
+  display: inline-block;
+}
+
+.hero .hero-content .text .smallt{
+  display: inline-block;
   margin-bottom: 40px;
 }
 
@@ -140,23 +173,9 @@ main .hero h1{
 }
 
 .hero .hero-content .text .go-to{
-  padding: 40px 0;
-}
-
-.hero .hero-content{
-  position: relative;
-}
-
-.hero .hero-content .text{
-  width: 20%;
-}
-
-.hero .hero-content .image{
-  width: 70%;
-  position: absolute;
-  right: 0;
-  top: 0;
-  min-width: 750px;
+  padding-bottom: 40px;
+  flex-shrink: 2;
+  display: inline-block;
 }
 
 /* SECTION WHIT FOUR BOXES AND RADIO */
