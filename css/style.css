@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   font-family: 'Open Sans', sans-serif;
 }
@@ -191,6 +195,7 @@ main .hero h1.container-big{
 /* BOXES GENERAL */
 section.tarif{
   margin-top: 160px;
+  margin-bottom: 100px;
 }
 
 section.tarif .row{
@@ -339,7 +344,7 @@ section.tarif .row .box{
 /* SECTION CTA PATNER */
 .cta{
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 100px;
   font-size: 14px;
 }
 
@@ -368,13 +373,13 @@ section.tarif .row .box{
   color: gray;
 }
 /* SECTION CON DUE ROW CON IMG E TEXT E H2 */
-section.spot-card,
-section.spot-card h2{
-  margin-bottom: 40px;
+section.spot-card{
+  margin-bottom: 100px;
 }
 
 section.spot-card h2{
   font-size: 30px;
+  margin-bottom: 40px
 }
 
 section.spot-card .row{
@@ -397,7 +402,7 @@ section.spot-card .row .card p{
 
 /* H2 E LINK */
 section.cta2{
-  margin-bottom: 40px;
+  margin-bottom: 100px;
 }
 
 section.cta2 h2{
@@ -633,7 +638,7 @@ footer{
 }
 
 .f-bottom .dropbtn .lang .ico:last-child::after{
-  content: "\f078";
+  content: "\f0d7";
 }
 
 .f-bottom .dropmenu ul{
@@ -665,5 +670,5 @@ footer{
 }
 
 .f-bottom .dropbtn:hover .ico:last-child::after{
-  content: '\f077';
+  content: '\f0d8';
 }
